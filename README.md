@@ -47,7 +47,7 @@ Deep-dive into service quality — On Time Delivery %, Late Delivery %, Avg Ship
 ### 3. Sales & Profitability
 Revenue, profit, margin, and average order value trends with previous-year benchmarking on every card.
 
-![Sales & Profitability](./Screenshots/Sales%20&%20Profitability.png)
+![Sales & Profitability](./Screenshots/Sales-Profitability.png)
 
 ### 4. Geographic Analysis
 Market and region-level breakdown of shipments, sales, and delivery performance for spatial pattern discovery.
