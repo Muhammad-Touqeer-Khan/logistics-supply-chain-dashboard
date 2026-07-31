@@ -47,7 +47,7 @@ Deep-dive into service quality — On Time Delivery %, Late Delivery %, Avg Ship
 ### 3. Sales & Profitability
 Revenue, profit, margin, and average order value trends with previous-year benchmarking on every card.
 
-![Sales & Profitability](./Screenshots/Sales-Profitability.png)
+![Sales & Profitability](./Screenshots/Sales-Profability.png)
 
 ### 4. Geographic Analysis
 Market and region-level breakdown of shipments, sales, and delivery performance for spatial pattern discovery.
@@ -63,51 +63,4 @@ This wasn't just a drag-and-drop dashboard — several real modeling problems we
 - **Critical relationship bug fix:** Discovered that `Fact Orders[Order Date]` (a DateTime column with time-of-day values) was joined to `Dim Date[Date]` (pure dates) as an *exact match* relationship — silently orphaning **99.93% of fact rows** from the calendar table and inflating YoY growth figures to absurd levels (145,000%+). Fixed by engineering clean, time-truncated date key columns and rebuilding the relationship correctly.
 - **100+ DAX measures** covering core KPIs, YoY/PY comparisons, dynamic conditional formatting (background/font color measures), and a reusable **dynamic KPI-switching pattern** (disconnected selector table + `SELECTEDVALUE` + `SWITCH`) to power a single scalable scorecard visual instead of duplicating cards.
 - **Consistent, presentation-ready number formatting** (K/M suffixes, percentage-point vs. relative-percent handling) applied uniformly across every KPI card.
-- **Dynamic storytelling measures**, e.g. a "Most Delayed Shipping Mode" card that automatically surfaces the worst-performing shipping mode and its delay gap — rather than hiding it inside a flat average.
-
----
-
-## 🛠️ Tools & Tech Stack
-
-- **Power BI Desktop** — data modeling, report design
-- **DAX** — measures, YoY logic, dynamic KPI switching, conditional formatting
-- **Power Query (M)** — data cleaning and transformation
-- **Star Schema** data modeling
-- **DataCo Global Supply Chain** dataset
-
----
-
-## 📂 Repository Structure
-
-```
-├── Logistics Supply Chain Dashboard.pbix   # Main Power BI report
-├── Screenshots/                             # Dashboard page screenshots
-│   ├── HomePage (1).png
-│   ├── Executive Summary.png
-│   ├── Delivery Performance.png
-│   ├── Sales & Profitability.png
-│   └── Geograhpic Analysis.png
-└── README.md
-```
-
----
-
-## 🚀 How to Use
-
-1. Clone this repository
-2. Open `Logistics Supply Chain Dashboard.pbix` in **Power BI Desktop**
-3. Explore the report pages using the navigation panel and slicers (Market, Shipping Mode, Order Date, Year-Month, Delivery Status)
-
----
-
-## 👤 Author
-
-**Touqeer**
-Business Intelligence Developer | Data Analyst
-📍 Rawalpindi, Pakistan
-
-Connect with me on [LinkedIn](#) for more Power BI & data analytics projects.
-
----
-
-⭐ If you find this project useful, consider giving it a star!
+- **Dynamic storytelling measures**, e.g. a "Most Delayed Shipping Mode" card that automatically surfaces the worst-performing shipping mode and its
