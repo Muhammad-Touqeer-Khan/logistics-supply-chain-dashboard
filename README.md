@@ -29,19 +29,30 @@ This project is a 4-page executive-level Power BI dashboard that transforms raw 
 
 ## 🖥️ Dashboard Pages
 
+### 🏠 Home Page
+Landing page with report navigation and project branding.
+
+![Home Page](./Screenshots/HomePage%20(1).png)
+
 ### 1. Executive Summary
 High-level KPI overview with YoY comparison cards (Total Shipments, Total Sales, Late/On-Time Deliveries), a shipments trend line chart, delivery status breakdown donut, and a regional shipments map.
+
+![Executive Summary](./Screenshots/Executive%20Summary.png)
 
 ### 2. Delivery Performance
 Deep-dive into service quality — On Time Delivery %, Late Delivery %, Avg Shipping Delay, Cancellation Rate — broken down by Shipping Mode and Order Region, with a dynamic "most delayed shipping mode" insight card.
 
+![Delivery Performance](./Screenshots/Delivery%20Performance.png)
+
 ### 3. Sales & Profitability
 Revenue, profit, margin, and average order value trends with previous-year benchmarking on every card.
+
+![Sales & Profitability](./Screenshots/Sales%20&%20Profitability.png)
 
 ### 4. Geographic Analysis
 Market and region-level breakdown of shipments, sales, and delivery performance for spatial pattern discovery.
 
-📷 *Screenshots available in [`/screenshots`](./screenshots)*
+![Geographic Analysis](./Screenshots/Geograhpic%20Analysis.png)
 
 ---
 
@@ -69,12 +80,13 @@ This wasn't just a drag-and-drop dashboard — several real modeling problems we
 ## 📂 Repository Structure
 
 ```
-├── Logistics-Supply-Chain-Dashboard.pbix   # Main Power BI report
-├── screenshots/                             # Dashboard page screenshots
-│   ├── executive_summary.png
-│   ├── delivery_performance.png
-│   ├── sales_profitability.png
-│   └── geographic_analysis.png
+├── Logistics Supply Chain Dashboard.pbix   # Main Power BI report
+├── Screenshots/                             # Dashboard page screenshots
+│   ├── HomePage (1).png
+│   ├── Executive Summary.png
+│   ├── Delivery Performance.png
+│   ├── Sales & Profitability.png
+│   └── Geograhpic Analysis.png
 └── README.md
 ```
 
@@ -83,7 +95,7 @@ This wasn't just a drag-and-drop dashboard — several real modeling problems we
 ## 🚀 How to Use
 
 1. Clone this repository
-2. Open `Logistics-Supply-Chain-Dashboard.pbix` in **Power BI Desktop**
+2. Open `Logistics Supply Chain Dashboard.pbix` in **Power BI Desktop**
 3. Explore the report pages using the navigation panel and slicers (Market, Shipping Mode, Order Date, Year-Month, Delivery Status)
 
 ---
