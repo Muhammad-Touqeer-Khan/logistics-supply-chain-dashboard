@@ -64,3 +64,48 @@ This wasn't just a drag-and-drop dashboard — several real modeling problems we
 - **100+ DAX measures** covering core KPIs, YoY/PY comparisons, dynamic conditional formatting (background/font color measures), and a reusable **dynamic KPI-switching pattern** (disconnected selector table + `SELECTEDVALUE` + `SWITCH`) to power a single scalable scorecard visual instead of duplicating cards.
 - **Consistent, presentation-ready number formatting** (K/M suffixes, percentage-point vs. relative-percent handling) applied uniformly across every KPI card.
 - **Dynamic storytelling measures**, e.g. a "Most Delayed Shipping Mode" card that automatically surfaces the worst-performing shipping mode and its
+
+## 🛠️ Tools & Tech Stack
+
+- **Power BI Desktop** — data modeling, report design
+- **DAX** — measures, YoY logic, dynamic KPI switching, conditional formatting
+- **Power Query (M)** — data cleaning and transformation
+- **Star Schema** data modeling
+- **DataCo Global Supply Chain** dataset
+
+---
+
+## 📂 Repository Structure
+
+```
+├── Logistics-Supply-Chain-Dashboard.pbix   # Main Power BI report
+├── screenshots/                             # Dashboard page screenshots
+│   ├── executive_summary.png
+│   ├── delivery_performance.png
+│   ├── sales_profitability.png
+│   └── geographic_analysis.png
+└── README.md
+```
+
+---
+
+## 🚀 How to Use
+
+1. Clone this repository
+2. Open `Logistics-Supply-Chain-Dashboard.pbix` in **Power BI Desktop**
+3. Explore the report pages using the navigation panel and slicers (Market, Shipping Mode, Order Date, Year-Month, Delivery Status)
+
+---
+
+## 👤 Author
+
+**Touqeer**
+Business Intelligence Developer | Data Analyst Associate
+📍 Rawalpindi, Pakistan
+
+Connect with me on [LinkedIn](#) for more Power BI & data analytics projects.
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
+
